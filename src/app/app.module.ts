@@ -8,6 +8,7 @@ import { FooterComponent } from './footer/footer.component';
 import { AsideComponent } from './aside/aside.component';
 import { NavComponent } from './nav/nav.component';
 import { SectionComponent } from './section/section.component';
+import {  HttpClientModule } from '@angular/common/http';
 
 
 
@@ -23,7 +24,8 @@ import { SectionComponent } from './section/section.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
  
   providers: [],
