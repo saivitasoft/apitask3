@@ -1,1 +1,14 @@
-<p>footer works!</p>
+<a routerLink="header"></a>
+<a routerLink="aside"></a>
+<a routerLink="app-section"></a>
+<a routerLink="app-nav"></a>
+
+
+<ul>
+    <li *ngFor="let row of apiData">
+
+        <p>{{row.id}}</p>
+        <p>{{row.title}}</p>
+    </li>
+    </ul>
+

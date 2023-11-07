@@ -8,7 +8,7 @@ import { Subscriber } from 'rxjs';
   styleUrls: ['./footer.component.css']
 })
 export class FooterComponent  implements OnInit{
-
+   apiData! :any;
   constructor(private apiService: SaiapiService){}
 
   ngOnInit(): void {
@@ -16,6 +16,9 @@ export class FooterComponent  implements OnInit{
     this.apiService.getData().subscribe((res: any) => {
      
       console.log(res);
+      this.apiData = res
+      console.log(this.apiData);
+
 
     })
 
