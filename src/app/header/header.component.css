@@ -5,6 +5,14 @@ h1{
     text-align: center;
     font-weight: bold;
     font-style: oblique;
+    @keyframes blinkingText{
+        0%{ color:}
+        25%{ color:}
+        50%{ color:
+        
+        }
+        
+    }
 
 
  
